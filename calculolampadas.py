@@ -2,8 +2,11 @@
 # Cálculo de lâmpadas
 
 pwlampadas = int(input("Informe a potência da lâmpada: "))
-mqdcomodo = int(input("Informe a dimensão bruta em metros quadrados: "))
+largura = int(input("Informe a largura do cômodo: "))
+comprimento = int(input("Informe o comprimento do cômodo: "))
 
-resultado = ""
+area = largura * comprimento
 
-print(resultado)
+resultado = round((area * 3) / pwlampadas)
+
+print(f"A quantidade de lâmpadas necessária é: ",resultado)
